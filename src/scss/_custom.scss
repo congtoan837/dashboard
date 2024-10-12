@@ -1,0 +1,46 @@
+/* Phong cách cơ bản của react-select với coreui */
+.coreui__control {
+  background-color: var(--cui-body-bg, #fff); /* Nền của select */
+  color: var(--cui-body-color, #000); /* Màu chữ */
+  border: 1px solid var(--cui-input-border-color, #ced4da); /* Đường viền */
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  min-height: calc(1.5em + 0.75rem + 2px);
+}
+
+.coreui__control--is-focused {
+  border-color: var(--cui-input-focus-color, #80bdff); /* Khi được chọn */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Ánh sáng khi focus */
+}
+
+.coreui__menu {
+  background-color: var(--cui-body-bg, #fff); /* Nền của menu dropdown */
+  color: var(--cui-body-color, #000); /* Màu chữ */
+  border: 1px solid var(--cui-input-border-color, #ced4da);
+}
+
+.coreui__option {
+  background-color: var(--cui-body-bg, #fff); /* Nền các option */
+  color: var(--cui-body-color, #000); /* Màu chữ */
+  padding: 0.5rem 1rem;
+}
+
+.coreui__option--is-focused {
+  background-color: var(--cui-input-focus-color, #007bff); /* Nền khi hover */
+  color: var(--cui-white, #fff); /* Màu chữ khi hover */
+}
+
+.coreui__option--is-selected {
+  background-color: var(--cui-primary, #007bff); /* Nền khi được chọn */
+  color: var(--cui-white, #fff); /* Màu chữ khi được chọn */
+}
+
+.coreui__multi-value {
+  background-color: var(--cui-primary, #007bff); /* Nền cho lựa chọn nhiều */
+  color: var(--cui-white, #fff); /* Màu chữ */
+}
+
+.coreui__multi-value__remove {
+  background-color: var(--cui-danger, #dc3545); /* Nền cho nút xóa */
+  color: var(--cui-white, #fff);
+}

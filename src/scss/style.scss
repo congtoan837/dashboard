@@ -1,0 +1,15 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "../../node_modules/@coreui/coreui/scss/coreui";
+@import "../../node_modules/@coreui/chartjs/scss/coreui-chartjs";
+
+// Vendors
+@import "vendors/simplebar";
+
+// Custom styles for this theme
+@import "theme";
+
+// If you want to add custom CSS you can put it here
+@import "custom";
