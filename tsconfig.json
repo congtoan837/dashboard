@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "*": [
+        "src/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    // Allow importing JSON files
+    "esModuleInterop": true,
+    // Ensure compatibility with CommonJS modules
+    "strict": true
+    // Enable strict type-checking options
+  },
+  "include": [
+    "src"
+  ]
+}

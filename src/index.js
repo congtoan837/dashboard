@@ -1,13 +1,20 @@
-import React from 'react'
-import { createRoot } from 'react-dom/client'
-import { Provider } from 'react-redux'
-import 'core-js'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
+import {Provider} from 'react-redux';
+import store from './store';
+import App from './App';
 
-import App from './App'
-import store from './store'
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-createRoot(document.getElementById('root')).render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-)
+// Ensure i18n is initialized before rendering
+root.render(
+    <React.StrictMode>
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    </React.StrictMode>
+);
+
+// Performance reporting (optional)
+reportWebVitals();
